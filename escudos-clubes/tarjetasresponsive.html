@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tarjetas de juego</title>
+    <style>
+        .tarjetero{
+         display:flex; 
+         justify-content: space-around;
+
+        }
+        .tarjeta{
+            width:340px;
+            height:500px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            box-shadow: 0px 4px 4px rgba(0,0, 0, 0.2);
+            box-sizing: content-box;
+            margin:20px;
+    
+
+        }
+        .fototarjeta{
+            width: 100%;
+            height: 200px; 
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        .textotarjeta{
+            text-align: center;
+         padding: 5px;
+        }
+        .textotarjeta h2{ 
+            font-family: arial;
+            font: bold;
+        }
+        .textotarjeta p{ 
+            font-family: arial;
+            font-size: 18px;
+        }
+       
+
+      #botonceleste {
+         display: flex;
+         justify-content: center;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 20px;
+         color: white;
+      
+       }
+      #botonceleste a{
+      text-decoration: none;
+      background-color:#079d9c;
+      border-radius: 20px;
+      padding: 10px;
+      width: 200px;
+      }
+      #botonceleste  a:hover{
+       background-color: #00ff00;
+       border-radius: 20px;
+       width: 200px;
+       color: blue;
+       padding: 10px;
+       }
+       #botonazul {
+         display: flex;
+         justify-content: center;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 20px;
+         color: white;
+      
+       }
+      #botonazul a{
+      text-decoration: none;
+      background-color:#184983;
+      border-radius: 20px;
+      padding: 10px;
+      width: 200px;
+      }
+      #botonazul  a:hover{
+       background-color: #00ff00;
+       border-radius: 20px;
+       width: 200px;
+       color: blue;
+       padding: 10px;
+      
+       }
+       #botonrojo {
+         display: flex;
+         justify-content: center;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 20px;
+         color: white;
+      
+       }
+      #botonrojo a{
+      text-decoration: none;
+      background-color:#f45c3b;
+      border-radius: 20px;
+      padding: 10px;
+      width: 200px;
+      }
+      #botonrojo  a:hover{
+       background-color: #00ff00;
+       border-radius: 20px;
+       width: 200px;
+       color: blue;
+       padding: 10px;
+       }
+
+       @media ( max-width: 768px ) {
+        .tarjetero{
+         display:flex; 
+         justify-content: space-around;
+         flex-direction: column;
+
+        }
+
+
+       }
+    </style>
+</head>
+<body>
+    <section class="tarjetero"> 
+       <div class="tarjeta">
+           <img class="fototarjeta" src="dragonball1.jpg">
+           <div class="textotarjeta">
+               <h2> League of Legends</h2>
+               <p> Liga de los legendarios es un videojuego de género multijugador de arena de batalla en línea y deporte electrónico el cual fue desarrollado por Riot Games.</p>
+               <div id="botonceleste" >
+                   <a href:"http://www.google.com" target="_blank" >ir al Juego</a>
+               </div>
+           </div>
+      </div>
+       <div class="tarjeta"> 
+        <img class="fototarjeta" src="Dragon-Ball-Super.jpeg">
+        <div class="textotarjeta">
+            <h2> Dragon Ball 2</h2>
+            <p> Liga de los legendarios de Dragon Ball</p>
+            <div id="botonazul" >
+                <a href:"#" >ir al Juego</a>
+            </div>
+        </div>
+       </div>
+       <div class="tarjeta">
+        <img class="fototarjeta" src="dragon-ball-estilo.jpg">
+        <div class="textotarjeta">
+            <h2> Dragon Ball 3</h2>
+            <p> Liga de los legendarios de Dragon Ball</p>
+            <div id="botonrojo" >
+                <a href:"#" >ir al Juego</a>
+    </section>
+  
+</body>
+
+</html>
