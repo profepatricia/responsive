@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>menu</title>
+<style>
+*{
+  font-family: arial;  
+}
+nav{
+  background-color:mediumspringgreen
+}
+input{
+  display: none;
+}
+label {
+  display: none;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  padding: 0;
+}
+li{
+  display: block;
+  background: white;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px  solid grey;
+}
+li:hover{
+  filter: brightness(110%);
+  text-decoration: none;
+}
+
+ul li a{
+  text-decoration: none;
+}
+@media all and (max-width: 700px) {
+  input:checked  ~ ul{   /*muestra todas el contenido de todas las etiquetas ul */
+  display:block;
+    }
+
+    input:checked ~ label {   /*muestra todo el contenido de todas las etiquetas label */
+    background: lightgrey; 
+        }
+
+    label:hover{                /*cambia el color de ☰ */
+    background: grey;
+    }
+
+  li{                         /*elimina el margen  de cada botón */
+       margin: 0px;
+   }
+
+   label {                      /* dibuja la etiqueta ☰  con formato botón */
+     box-sizing: border-box;
+     display: block;
+     border: 1px solid black;
+     border-radius: 5px;
+     width: 30px;
+     height: 30px;
+     line-height: 30px;
+     font-weight: bold;
+     text-align: center;
+     user-select: none;
+     background-color: cadetblue;
+   }
+}
+.tarjetero{
+ display:flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ }
+ .tarjeta{
+ width:340px;
+ border-top-left-radius: 30px;
+ border-top-right-radius: 30px;
+ box-shadow: 0px 4px 4px rgba(0,0, 0, 0.2);
+ box-sizing: content-box;
+ }
+ .fototarjeta{
+ width: 100%;
+ height: 200px;
+ border-top-left-radius: 30px;
+ border-top-right-radius: 30px;
+ }
+ .textotarjeta{
+ text-align: center;
+ padding: 5px;
+ }
+ .textotarjeta h2{
+ font-family: arial;
+ font: bold;
+ }
+ .textotarjeta p{
+ font-family: arial;
+ font-size: 18px;
+ }
+ #botonceleste {
+ display: flex;
+ justify-content: center;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 20px;
+ color: white;
+ }
+ #botonceleste a{
+ text-decoration: none;
+ background-color:#079d9c;
+ border-radius: 20px;
+ padding: 10px;
+ width: 200px;
+ }
+ #botonceleste a:hover{
+ background-color: #00ff00;
+ border-radius: 20px;
+ width: 200px;
+ color: blue;
+ padding: 10px;
+ }
+ #botonazul {
+ display: flex;
+ justify-content: center;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 20px;
+ color: white;
+ }
+ #botonazul a{
+ text-decoration: none;
+ background-color:#184983;
+ border-radius: 20px;
+ padding: 10px;
+ width: 200px;
+ }
+ #botonazul a:hover{
+ background-color: #00ff00;
+ border-radius: 20px;
+ width: 200px;
+ color: blue;
+ padding: 10px;
+ }
+ #botonrojo {
+ display: flex;
+ justify-content: center;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 20px;
+ color: white;
+ }
+ #botonrojo a{
+ text-decoration: none;
+ background-color:#f45c3b;
+ border-radius: 20px;
+ padding: 10px;
+ width: 200px;
+ }
+ #botonrojo a:hover{
+ background-color: #00ff00;
+ border-radius: 20px;
+ width: 200px;
+ color: blue;
+ padding: 10px;
+ }
+
+</style>
+</head>
+<body>
+  <h1>hola gente! sean bienvenidos!</h1>
+  <nav>
+    <input type="checkbox" id="menu"> 
+      <label for="menu"> ☰ </label>
+      <ul>
+        <li><a href="#">introduccion</a></li>
+        <li>tops juegos</li>
+        <li>redes sociales</li>
+        <li>mis juegos favoritos</li>
+        <li>compras de juegos</li>
+      </ul>
+     </nav>
+     <section class="tarjetero">
+      <div class="tarjeta">
+      <img class="fototarjeta" src="fall guys.jpg">
+      <div class="textotarjeta">
+      <h2> Fall Guys</h2>
+      <p> Fall Guys es un juego online en el que se disputan partidas de 60 personas que compiten entre sí por ser la única en pie y hacerse con “la corona”, el premio final. Como en Los Juegos del Hambre, vaya. Como en cualquier otro battle royale. ... Es como volver al recreo, a los juegos de nuestra infancia.</p>
+      <div id="botonceleste" >
+      <a href:"#" >ir al Juego</a>
+      </div>
+      </div>
+      </div>
+      <div class="tarjeta">
+      <img class="fototarjeta" src="among us.jpg">
+      <div class="textotarjeta">
+      <h2> Among Us</h2>
+      <p>Among Us​ es un videojuego modo fiesta multijugador en línea desarrollado por InnerSloth y lanzado el 15 de junio de 2018. El juego tiene un grupo de jugadores a bordo de una nave espacial, cada uno de los cuales asume uno de los dos roles, la mayoría son compañeros de tripulación y al menos uno es impostor.</p>
+      <div id="botonazul" >
+      <a href:"#" >ir al Juego</a>
+      </div>
+      </div>
+      </div>
+      <div class="tarjeta">
+      <img class="fototarjeta" src="counter strike.jpg">
+      <div class="textotarjeta">
+      <h2> Counter Strike</h2>
+      <p>Counter-Strike es un videojuego de disparos en primera persona multijugador (ya sea en LAN o en línea) desarrollado por Valve para Microsoft Windows. Es una modificación completa del juego Half-Life, realizada por Minh Le y Jess Cliffe, quienes lanzaron la primera versión el 18 de junio de 1999.</p>
+      <div id="botonrojo" >
+      <a href:"#" >ir al Juego</a>
+      </section>
+</body>
+</html>

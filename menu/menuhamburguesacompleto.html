@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+
+   <style>
+*{
+  font-family: Arial;  /*Cambia el tipo de letra a todo el texto */
+}
+nav{                         /*establece color de fondo de la linea de los botones*/
+  background-color: blue;
+}
+input {                        /*no muestra el botón de menu */
+  display: none;     
+}
+label {                       /*no muestra la etiqueta ☰ */
+    display:none;
+}
+ul{                           /*muestra los botones con la disposición horizontal para notebook */
+  display: flex;
+  justify-content: space-between;
+  margin-top:0;
+  padding: 0;
+ 
+
+}
+
+
+li {                     /*determina la propiedad de cada botón*/
+  display: block;
+  background: lightgrey;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+  width: 200px;
+}
+
+/*Estilo cuando el mouse pasa encima de cada link del menu*/
+li:hover {                        /*determina la propiedad de cada botón cuando se posiciona encima*/
+  filter: brightness(110%);
+}
+
+
+
+@media all and (max-width: 700px) {  /*cuando el dispositivo es como máximo de 700px*/
+
+  input:checked  ~ ul{   /*muestra todas el contenido de todas las etiquetas ul */
+  display:block;
+    }
+
+    input:checked ~ label {   /*muestra todo el contenido de todas las etiquetas label */
+    background: lightgrey; 
+        }
+
+    label:hover{                /*cambia el color de ☰ */
+    background: grey;
+    }
+
+  li{                         /*elimina el margen  de cada botón */
+       margin: 0px;
+   }
+
+   label {                      /* dibuja la etiqueta ☰  con formato botón */
+     box-sizing: border-box;
+     display: block;
+     border: 1px solid black;
+     border-radius: 5px;
+     width: 30px;
+     height: 30px;
+     line-height: 30px;
+     font-weight: bold;
+     text-align: center;
+     user-select: none;
+     background-color: cadetblue;
+
+      }
+    
+
+  ul{                          /*deja de mostrar el bloque contenedor de los botones horizontales */
+     display: none;
+     background-color:white;
+
+    }
+
+}
+    
+</style>
+</head>
+<body>
+    <h1> Menu Responsive hamburguesa</h1>
+    <nav>
+      <input type="checkbox" id="menu">  
+      <label for="menu"> ☰ </label>
+      <ul>
+        <li>Enlace  1</li>
+        <li> <img src="casita.gif"><a href="#"> Link 2</a></li>
+        <li>Link 3</li>
+        <li>Link 4</li>
+      </ul>
+    </nav>
+   <h1> Titulo de documento</h1>
+</body>
+</html>
